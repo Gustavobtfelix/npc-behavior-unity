@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 1635089179}
   - component: {fileID: 1635089178}
   - component: {fileID: 1635089177}
+  - component: {fileID: 1635089182}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -677,12 +678,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635089176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.674736, y: 11.35, z: 0.99234337}
+  m_LocalPosition: {x: -47.674736, y: 11.3, z: 0.99234337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635089182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635089176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d0e848b4504b041b49d0f41acb0172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1635089177}
+  player: {fileID: 471081224}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 64
+  health: 120
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 5
+  timeBetweenAttacks: 1
+  projectile: {fileID: 8969136085353050376, guid: 860d0d3f1fdb55344af1bed7175a46ad, type: 3}
+  sightRange: 20
+  attackRange: 12
+  playerInSightRange: 0
+  playerInAttackRange: 0
 --- !u!1001 &8293153379238575992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -696,15 +726,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2754526030788547399, guid: 860d0d3f1fdb55344af1bed7175a46ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47.674736
+      value: -45.81
       objectReference: {fileID: 0}
     - target: {fileID: 2754526030788547399, guid: 860d0d3f1fdb55344af1bed7175a46ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.514038
+      value: 11.868481
       objectReference: {fileID: 0}
     - target: {fileID: 2754526030788547399, guid: 860d0d3f1fdb55344af1bed7175a46ad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.99234337
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 2754526030788547399, guid: 860d0d3f1fdb55344af1bed7175a46ad, type: 3}
       propertyPath: m_LocalRotation.w

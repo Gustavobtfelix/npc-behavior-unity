@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlaJogador : MonoBehaviour
+public class Movimento : MonoBehaviour
 {
-
     public float Velocidade = 10;
     private float eixoX;
     private float eixoZ;
